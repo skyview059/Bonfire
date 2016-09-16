@@ -113,7 +113,7 @@ if (isset($shortcut_data) && is_array($shortcut_data['shortcut_keys'])) {
     <div class="subnav" >
        <div class="container-fluid">
            <?php if (isset($toolbar_title)) : ?>
-            <h1><?php echo $toolbar_title; ?></h1>
+           <h1><?php echo $toolbar_title; ?></h1>
            <?php endif; ?>
            <div class="pull-right" id="sub-menu">
                <?php Template::block('sub_nav', ''); ?>

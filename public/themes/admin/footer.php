@@ -5,24 +5,26 @@
   <!-- /.content-wrapper -->
   
 
-<footer class="container-fluid footer">
-		<p class="pull-right">
-			Executed in {elapsed_time} seconds, using {memory_usage}.<br />
-			Powered by <a href="http://cibonfire.com" target="_blank"><span class="icon-fire"></span>&nbsp;Bonfire</a> <?php echo BONFIRE_VERSION; ?>
-		</p>
-	</footer>
-
-
-
   <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.6
+    <div class="row">
+        <div class="col-md-12">
+      <div class="pull-left hidden-xs">
+        <b>Version</b> 2.3.6
+
+      <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+      reserved.
+      </div>
+      <p class="pull-right">
+          Executed in {elapsed_time} seconds, using {memory_usage}.
+          Powered by <a href="http://cibonfire.com" target="_blank"><span class="icon-fire"></span>&nbsp;Bonfire</a> <?php echo BONFIRE_VERSION; ?>
+      </p>
+        </div>
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
   </footer>
 
-
+  <style type="text/css">
+/*    #codeigniter-profiler { display: block !important; }*/
+  </style>
     <div id="debug"><!-- Stores the Profiler Results --></div>   
    
     
