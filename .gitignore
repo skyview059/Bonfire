@@ -61,3 +61,5 @@ vendor/*
 
 # Ignore any sparks that have been loaded
 sparks/*
+/public/AdminLTE-master
+/public/AdminLTE-master.zip

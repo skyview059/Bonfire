@@ -12,6 +12,9 @@ echo theme_view('header');
 
 ?>
 <div class="body">
+    <div class="col-md-3">
+            ljalkjdslkjadlsfkj
+        </div>
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span2">

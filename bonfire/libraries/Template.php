@@ -204,7 +204,7 @@ class Template
         }
 
         // Time to render the layout.
-        $output = '';
+        $output = '';        
         self::load_view($layout, self::$data, $controller, true, $output);
 
         if (empty($output)) {

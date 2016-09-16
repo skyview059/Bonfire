@@ -345,7 +345,7 @@ class Auth
         $this->user = $user;
         $this->user->id = (int) $this->user->id;
         $this->user->role_id = (int) $this->user->role_id;
-
+              
         return $this->user;
     }
 
@@ -428,7 +428,7 @@ class Auth
     {
         // If user isn't logged in, redirect to the login page.
         if ($this->is_logged_in() === false) {
-            Template::set_message($this->ci->lang->line('us_must_login'), 'error');
+            Template::set_message($this->ci->lang->line('us_must_login'), 'error');           
             Template::redirect(LOGIN_URL);
         }
 
