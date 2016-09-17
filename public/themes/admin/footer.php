@@ -23,7 +23,7 @@
   </footer>
 
   <style type="text/css">
-/*    #codeigniter-profiler { display: block !important; }*/
+    #codeigniter-profiler { display: block !important; }
   </style>
     <div id="debug"><!-- Stores the Profiler Results --></div>   
    

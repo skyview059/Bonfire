@@ -40,16 +40,17 @@ class Contexts
     protected static $templateContextNavMobileClass  = 'mobile_nav';
 
     /** @var string The class name to attach to the outer ul tag. */
-    protected static $outer_class = 'nav';
+    protected static $outer_class = 'sidebar-menu'; // nav
 
     /** @var string The class to attach to li tags with children. */
-    protected static $parent_class = 'dropdown';
+    // protected static $parent_class = 'dropdown';
+    protected static $parent_class = 'treeview';
 
     /** @var string The class to apply to li tags within ul tags inside. */
-    protected static $submenu_class = 'dropdown-submenu';
+    protected static $submenu_class = 'treeview-menu'; // 'dropdown-submenu';
 
     /** @var string The class to apply to ul tags within li tags. */
-    protected static $child_class = 'dropdown-menu';
+    protected static $child_class = 'treeview-menu'; //'dropdown-menu';
 
     /** @var string The id to apply to the outer ul tag. */
     protected static $outer_id = null;
@@ -243,6 +244,8 @@ class Contexts
                     $template
                 );
 
+                
+                        
                 // Build the menu for this context.
                 $menu .= str_replace(
                     array('{parent_class}', '{url}', '{id}', '{current_class}', '{title}', '{extra}', '{text}', '{content}'),
@@ -260,6 +263,9 @@ class Contexts
                 );
             }
         }
+        
+        // print_r( $menu );
+        // exit;
 
         // Put the generated menu into the context nav template.
         $nav = str_replace(
