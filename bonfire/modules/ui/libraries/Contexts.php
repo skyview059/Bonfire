@@ -47,7 +47,7 @@ class Contexts
     protected static $parent_class = 'treeview';
 
     /** @var string The class to apply to li tags within ul tags inside. */
-    protected static $submenu_class = 'treeview-menu'; // 'dropdown-submenu';
+    protected static $submenu_class = 'dropdown-submenu'; //'subclass'; // 'dropdown-submenu';
 
     /** @var string The class to apply to ul tags within li tags. */
     protected static $child_class = 'treeview-menu'; //'dropdown-menu';
