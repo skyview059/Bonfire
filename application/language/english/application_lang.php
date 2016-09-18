@@ -318,3 +318,5 @@ $lang['invalid_migration_filename'] = 'Wrong migration filename: %s - %s';
 $lang['form_validation_bf_users'] = 'Users';
 
 $lang['bf_context_account'] = 'Account';
+
+$lang['bf_context_gallery'] = 'Gallery';
