@@ -341,10 +341,11 @@ if (isset($shortcut_data) && is_array($shortcut_data['shortcut_keys'])) {
   </header>
     
   <?php require_once __DIR__ . '/sidebar.php'; ?>
+    
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+<!--    <section class="content-header">
       <h1>
         Dashboard
         <small>Control panel</small>
@@ -353,10 +354,15 @@ if (isset($shortcut_data) && is_array($shortcut_data['shortcut_keys'])) {
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
-    </section>
+    </section>-->
 
     <!-- Main content -->
     <section class="content">
       
    
-        
+      <div class="row" id="sub-menu">
+          <div class="col-md-12">
+               <?php Template::block('sub_nav', ''); ?>
+           </div>
+      </div>          
+      

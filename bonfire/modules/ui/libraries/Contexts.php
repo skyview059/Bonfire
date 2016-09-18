@@ -32,11 +32,11 @@ class Contexts
     protected static $templateMenu        = "<li><a {extra}href='{url}' title='{title}'>{display}</a>\n</li>\n";
     protected static $templateSubMenu     = "<li class='{submenu_class}'><a href='{url}'>{display}</a><ul class='{child_class}'>{view}</ul></li>\n";
 
-    protected static $templateContextEnd             = "<span class='caret'></span>";
+    protected static $templateContextEnd             = '<span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>'; //"<span class='caret'></span>";
     protected static $templateContextImage           = "<img src='{image}' alt='{title}' />";
-    protected static $templateContextText            = "{title}";
-    protected static $templateContextMenuAnchorClass = 'dropdown-toggle';
-    protected static $templateContextMenuExtra       = " data-toggle='dropdown' data-id='{dataId}_menu'";
+    protected static $templateContextText            = "<i class='fa fa-arrow-right' aria-hidden='true'></i><span> {title} </span>";
+    protected static $templateContextMenuAnchorClass = ''; //'dropdown-toggle';
+    protected static $templateContextMenuExtra       = '';//" data-toggle='dropdown' data-id='{dataId}_menu'";
     protected static $templateContextNavMobileClass  = 'mobile_nav';
 
     /** @var string The class name to attach to the outer ul tag. */
@@ -235,6 +235,7 @@ class Contexts
             ) {
                 // The text/image displayed in the top-level context menu.
                 $title    = self::$ci->lang->line("bf_context_{$context}");
+                
                 $navTitle = str_replace(
                     array('{title}', '{image}'),
                     array(
@@ -243,6 +244,7 @@ class Contexts
                     ),
                     $template
                 );
+                
 
                 
                         

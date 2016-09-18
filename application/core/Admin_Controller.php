@@ -76,3 +76,10 @@ class Admin_Controller extends Authenticated_Controller
     }
 }
 /* End of file Admin_Controller.php */
+
+function dd($array){
+    echo '<pre>';   
+    print_r($array);
+    echo '</pre>';
+    exit;
+}
